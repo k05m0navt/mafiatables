@@ -1,4 +1,5 @@
 import Layout from "./Layout";
 import Navbar from "./Navbar";
+import OffCanvasMenu from "./OffCanvasMenu";
 
-export { Layout, Navbar };
+export { Layout, Navbar, OffCanvasMenu };
