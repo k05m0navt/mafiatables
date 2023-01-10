@@ -9,6 +9,10 @@ const links: { [key: string]: { path: string; name: string } } = {
     path: "/login",
     name: LinkName.Login,
   },
+  [LinkName.Scoreboard]: {
+    path: "/scoreboard",
+    name: LinkName.Scoreboard,
+  },
 };
 
 export default links;

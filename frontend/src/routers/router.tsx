@@ -1,6 +1,6 @@
-import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../layouts";
+import links from "./links";
 
 const router = createBrowserRouter([
   {
@@ -9,8 +9,16 @@ const router = createBrowserRouter([
     errorElement: <div>Error</div>,
     children: [
       {
-        path: "/",
-        element: <div>Home</div>,
+        path: links.Home.path,
+        element: <div>{links.Home.name}</div>,
+      },
+      {
+        path: links.Login.path,
+        element: <div>{links.Login.name}</div>,
+      },
+      {
+        path: links.Scoreboard.path,
+        element: <div>{links.Scoreboard.name}</div>,
       },
     ],
   },
