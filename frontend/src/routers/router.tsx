@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../layouts";
+import { Scoreboard } from "../pages";
 import links from "./links";
 
 const router = createBrowserRouter([
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: links.Scoreboard.path,
-        element: <div>{links.Scoreboard.name}</div>,
+        element: <Scoreboard />,
       },
     ],
   },
