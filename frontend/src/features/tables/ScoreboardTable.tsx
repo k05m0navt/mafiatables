@@ -1,24 +1,36 @@
+import { createColumnHelper } from "@tanstack/react-table";
 import { FC } from "react";
+import Table from "../../components/Table";
 import { Player } from "../../types";
 
 type ScoreboardTableProps = {
   players: Player[];
 };
 
+const columnHelper = createColumnHelper<Player>();
+
+const columns = [
+  columnHelper.accessor("id", {
+    cell: (info) => info.getValue(),
+    footer: (info) => info.column.id,
+  }),
+  columnHelper.accessor("nickName", {
+    header: () => "Nickname",
+    cell: (info) => info.renderValue(),
+    footer: (info) => info.column.id,
+  }),
+  columnHelper.accessor("score", {
+    header: () => <span>Score</span>,
+    cell: (info) => info.renderValue(),
+    footer: (info) => info.column.id,
+  }),
+];
+
 const ScoreboardTable: FC<ScoreboardTableProps> = ({ players }) => {
   return (
-    <div>
-      {players.map((player, index) => {
-        return (
-          <div key={index}>
-            <div className="flex gap-1">
-              <p>{player.nickName}</p>
-              <p>{player.score}</p>
-            </div>
-          </div>
-        );
-      })}
-    </div>
+    <>
+      <Table columns={columns} data={players} />
+    </>
   );
 };
 
