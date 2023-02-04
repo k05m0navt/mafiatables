@@ -1,5 +1,5 @@
 type Player = {
-  id: number;
+  place: number;
   nickName: string;
   score: number;
 };

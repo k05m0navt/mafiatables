@@ -10,12 +10,13 @@ type ScoreboardTableProps = {
 const columnHelper = createColumnHelper<Player>();
 
 const columns = [
-  columnHelper.accessor("id", {
-    cell: (info) => info.getValue(),
+  columnHelper.accessor("place", {
+    header: () => <span>Place</span>,
+    cell: (info) => info.renderValue(),
     footer: (info) => info.column.id,
   }),
   columnHelper.accessor("nickName", {
-    header: () => "Nickname",
+    header: () => <span>Nickname</span>,
     cell: (info) => info.renderValue(),
     footer: (info) => info.column.id,
   }),

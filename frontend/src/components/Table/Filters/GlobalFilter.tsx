@@ -4,12 +4,13 @@ type GlobalFilterProps = {
   value: string | number;
   onChange: (value: string | number) => void;
   debounce?: number;
+  count?: number;
 };
 
 const GlobalFilter: FC<
   GlobalFilterProps &
     Omit<React.InputHTMLAttributes<HTMLInputElement>, "onChange">
-> = ({ value: initialValue, onChange, debounce = 500, ...props }) => {
+> = ({ value: initialValue, onChange, debounce = 500, count, ...props }) => {
   const [value, setValue] = useState(initialValue);
 
   useEffect(() => {
@@ -25,11 +26,20 @@ const GlobalFilter: FC<
   }, [debounce, onChange, value]);
 
   return (
-    <input
-      {...props}
-      value={value}
-      onChange={(e) => setValue(e.target.value)}
-    />
+    <label className="flex gap-x-2 items-baseline">
+      <span className="text-gray-700">Search: </span>
+      <input
+        {...props}
+        type="text"
+        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+        value={value || ""}
+        onChange={(e) => {
+          setValue(e.target.value);
+          onChange(e.target.value);
+        }}
+        placeholder={`${count} records...`}
+      />
+    </label>
   );
 };
 
