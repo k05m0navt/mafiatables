@@ -1201,6 +1201,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@heroicons/react@^2.0.14":
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-2.0.14.tgz#9cc23b8978b1829239250b3d7846cff16c58e9f5"
+  integrity sha512-eFL4if6L7woL1fUvk/jjXx4z9NxVESHHrQnEd2qKVelTFTIr/3VLGWdPb0biia9ZVe26P0JSs/xmOlRNur3SrQ==
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.8.tgz#03595ac2075a4dc0f191cc2131de14fbd7d410b9"
@@ -1753,6 +1758,25 @@
   integrity sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==
   dependencies:
     mini-svg-data-uri "^1.2.3"
+
+"@tanstack/match-sorter-utils@^8.7.6":
+  version "8.7.6"
+  resolved "https://registry.yarnpkg.com/@tanstack/match-sorter-utils/-/match-sorter-utils-8.7.6.tgz#ccf54a37447770e0cf0fe49a579c595fd2655b16"
+  integrity sha512-2AMpRiA6QivHOUiBpQAVxjiHAA68Ei23ZUMNaRJrN6omWiSFLoYrxGcT6BXtuzp0Jw4h6HZCmGGIM/gbwebO2A==
+  dependencies:
+    remove-accents "0.4.2"
+
+"@tanstack/react-table@^8.7.6":
+  version "8.7.6"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-table/-/react-table-8.7.6.tgz#1420d69da458fe13c08af73b6f3c98d5e49e63f6"
+  integrity sha512-/QijmMFeP7wDLBnr0MQ/5MlbXePbIL/1nOtkxBC9zvmBu4gDKJEDBqipUyM7Wc/iBpSd0IFyqBlvZvTPD9FYDA==
+  dependencies:
+    "@tanstack/table-core" "8.7.6"
+
+"@tanstack/table-core@8.7.6":
+  version "8.7.6"
+  resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.7.6.tgz#5ad8a67ef6312c56c4a075326afcb2813c030a22"
+  integrity sha512-sqiNTMzB6cpyL8DFH6/VqW48SwiflLqxQqYpo2wNock7rdVGvlm0BLNI8vZUJbr1+fmmWmHwBvi5OMgZw8n1DA==
 
 "@testing-library/dom@^8.5.0":
   version "8.19.1"
@@ -7702,6 +7726,11 @@ relateurl@^0.2.7:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha512-G08Dxvm4iDN3MLM0EsP62EDV9IuhXPR6blNz6Utcp7zyV3tr4HVNINt6MpaRWbxoOHT3Q7YN2P+jaHX8vUbgog==
+
+remove-accents@0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/remove-accents/-/remove-accents-0.4.2.tgz#0a43d3aaae1e80db919e07ae254b285d9e1c7bb5"
+  integrity sha512-7pXIJqJOq5tFgG1A2Zxti3Ht8jJF337m4sowbuHsW30ZnkQFnDzy9qBNhgzX8ZLW4+UBcXiiR7SwR6pokHsxiA==
 
 renderkid@^3.0.0:
   version "3.0.0"

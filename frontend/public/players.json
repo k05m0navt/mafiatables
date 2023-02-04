@@ -1,16 +1,56 @@
 [
   {
-    "id": 1,
+    "place": 1,
     "nickName": "Космонавт",
     "score": 6.25
   },
   {
-    "id": 2,
+    "place": 2,
     "nickName": "Крыша",
-    "score": 6.29
+    "score": 10.29
   },
   {
-    "id": 3,
+    "place": 3,
+    "nickName": "Филин",
+    "score": 7.8
+  },
+  {
+    "place": 4,
+    "nickName": "Филин",
+    "score": 7.8
+  },
+  {
+    "place": 5,
+    "nickName": "Филин",
+    "score": 7.8
+  },
+  {
+    "place": 6,
+    "nickName": "Филин",
+    "score": 7.8
+  },
+  {
+    "place": 7,
+    "nickName": "Филин",
+    "score": 7.8
+  },
+  {
+    "place": 8,
+    "nickName": "Филин",
+    "score": 7.8
+  },
+  {
+    "place": 9,
+    "nickName": "Филин",
+    "score": 7.8
+  },
+  {
+    "place": 10,
+    "nickName": "Филин",
+    "score": 7.8
+  },
+  {
+    "place": 11,
     "nickName": "Филин",
     "score": 7.8
   }

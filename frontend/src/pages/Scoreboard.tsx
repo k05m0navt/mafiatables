@@ -20,9 +20,15 @@ const Scoreboard: FC<ScoreboardProps> = () => {
   }, [players]);
 
   return (
-    <div>
-      <p>Scoreboard</p>
-      <ScoreboardTable players={players} />
+    <div className="min-h-screen bg-gray-100 text-gray-900">
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+        <div className="">
+          <h1 className="text-xl font-semibold">Scoreboard</h1>
+        </div>
+        <div className="mt-4">
+          <ScoreboardTable players={players} />
+        </div>
+      </main>
     </div>
   );
 };
